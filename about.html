@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | BeautyLab</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="navbar">
+  <div class="brand">
+    <img src="images/logo.jpg" alt="Logo" class="brand-logo">
+    <span class="brand-name">Beauty<span>Lab</span></span>
+  </div>
+
+  <nav class="nav-links">
+    <a href="#">Beauty</a>
+    <a href="#">Treatment</a>
+    <a href="#">About</a>
+
+    <div class="dropdown">
+  <a href="products.html" class="products-link">Products</a>
+      <div class="dropdown-menu">
+        <div class="column">
+          <h4>Beauty Services</h4>
+          <a href="#">Facials</a>
+          <a href="#">Hair Treatment</a>
+          <a href="#">Makeup</a>
+          <a href="#">Waxing</a>
+          <a href="#">Nail Care</a>
+        </div>
+        <div class="column">
+          <h4>Healthcare & Wellness</h4>
+          <a href="#">Laser Therapy</a>
+          <a href="#">Dermatology</a>
+          <a href="#">Anti-aging Treatments</a>
+          <a href="#">Acne Treatment</a>
+          <a href="#">Body Sculpting</a>
+        </div>
+      </div>
+    </div>
+
+    <a href="#">Price List</a>
+  </nav>
+<div id="menu-toggle" class="menu-toggle">☰</div>
+
+<div class="side-menu" id="side-menu">
+  <span class="close-btn" id="close-btn">&times;</span>
+  
+  <img src="images/menulogo.jfif" width="200" height="300" alt="Logo" class="logo" />
+
+  <p class="tagline">We are dedicated to help you achieve a sense of well being for your body mind & soul by providing a variety of healthcare & beauty services.</p>
+
+  <h3>Products & Services</h3>
+  <div class="services-columns">
+    <div class="service-category">
+      <h4>Beauty Services</h4>
+      <ul>
+        <li>Facials</li>
+        <li>Hair Treatment</li>
+        <li>Makeup</li>
+        <li>Waxing</li>
+        <li>Nail Care</li>
+      </ul>
+    </div>
+    <div class="service-category">
+      <h4>Healthcare & Wellness</h4>
+      <ul>
+        <li>Laser Therapy</li>
+        <li>Dermatology</li>
+        <li>Anti-aging Treatments</li>
+        <li>Acne Treatment</li>
+        <li>Body Sculpting</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Gallery</h3>
+  <div class="gallery">
+    <img src="images/gallery/gallery1.jfif" alt="Gallery Image 1" />
+    <img src="images/gallery/gallery2.jfif" alt="Gallery Image 2" />
+    <img src="images/gallery/gallery3.jfif" alt="Gallery Image 3" />
+    <img src="images/gallery/gallery4.jfif" alt="Gallery Image 4" />
+    <img src="images/gallery/gallery5.jfif" alt="Gallery Image 5" />
+    <img src="images/gallery/gallery6.jfif" alt="Gallery Image 6" />
+  </div>
+
+  <div class="contact-info">
+    <p><span class="icon">📍</span> kathmandu,Nepal</p>
+    <p><span class="icon">📞</span> +977-9120325003</p>
+  </div>
+</div>
+</header>
+<main>
+  <section class="banner">
+    <img src="images/About/lab.jfif" alt="About Us Banner" />
+  </section>
+
+  <section class="about-section slide-in">
+    <h1>About Us</h1>
+    <p>
+      Welcome to BeautyLab your trusted destination for beauty and wellness. Our goal is to empower
+      every individual to feel radiant and confident through our premium services and expert care.
+    </p>
+    <p>
+      Whether you're here for a relaxing facial, an advanced skincare treatment, or professional makeup,
+      we combine science with beauty to deliver visible results. Your satisfaction and self-care are at
+      the heart of everything we do.
+    </p>
+  </section>
+
+  <section class="team-section slide-in">
+    <h2>Meet Our Team</h2>
+    <div class="team-members">
+      <div class="member">
+        <img src="images/About/Nailea.jfif" alt="Nailea Devora" />
+        <h3>Nailea Devora</h3>
+        <p>Lead Esthetician</p>
+      </div>
+      <div class="member">
+        <img src="images/About/Billie.jfif" alt="Billie Eilish" />
+        <h3>Billie Eilish</h3>
+        <p>Makeup Artist</p>
+      </div>
+      <div class="member">
+        <img src="images/About/Christinaa.jfif" alt="Christina Nadin" />
+        <h3>Christina Nadin</h3>
+        <p>Wellness Specialist</p>
+      </div>
+    </div>
+  </section>
+</main>
+<div style="text-align: center; margin: 20px;">
+  <button class="back-to-menu-btn" onclick="window.location.href='index.html'">Back to Menu</button>
+</div>
+
+<section class="location-section" id="location">
+  <h2>Our Location</h2>
+  <p>Visit us at:</p>
+  <address>
+    BeautyLab Studio,<br>
+    Kathmandu, Nepal<br>
+    📞 +977-9120325003<br>
+    ✉️ contact@beautylab.com
+  </address>
+
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.4100354175026!2d85.31732127430545!3d27.70693397619582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb199205c6a1e1%3A0x736b1010da7cf8d!2sKathmandu%2C%20Nepal!5e0!3m2!1sen!2snp!4v1620245482435!5m2!1sen!2snp"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
