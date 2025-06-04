@@ -613,7 +613,6 @@ body {
   }
 }
 
-
 @media (max-width: 1024px) {
   .navbar {
     flex-direction: column;
