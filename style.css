@@ -363,9 +363,7 @@ body {
   overflow-y: auto;
 }
 
-.side-menu.open {
-  right: 0;
-}
+
 
 .menu-toggle {
   font-size: 2rem;
