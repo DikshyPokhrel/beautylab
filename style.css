@@ -89,9 +89,12 @@ body {
   line-height: 1.2;
   margin-bottom: 18px;
 }
-.highlight{
-   font: bold, sans-serif font
+
+.highlight {
+  font-weight: bold;
+  font-family: sans-serif;
 }
+
 
 .main-text .highlight {
   color: #ed8ad8;
@@ -145,7 +148,7 @@ body {
   padding-block-start: 4rem;
   border-radius: 0 0 9999px 9999px;
   transform: scale(var(--scale));
-  transition: .3s cubic-bezier(0.645, 0.045, 0,355, 1);
+  transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transform-origin: 50% calc(50% + 4rem);
 }
 
@@ -155,9 +158,11 @@ body {
     border-radius: 9999px;
     width: 320px;/*check point----------fix position */
     height: 320px;
-    background: gray, border-box;
+    background: gray;
+    box-sizing: border-box;
     box-shadow: inset 0 -2px 0 1px #0001;
 }
+
 .person_img {
   justify-self: left;
   width: 420px;
@@ -218,12 +223,6 @@ body {
   flex-wrap: wrap;
 }
 
-.features {
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
-  flex-wrap: wrap;
-}
 
 .feature-box {
   background: #f9f9f9; /*check point------------fix the bg colour*/
@@ -313,11 +312,6 @@ body {
   display: flex;
 }
 
-
-.dropdown:hover .dropdown-menu {
-  display: flex;
-}
-
 .dropdown-menu h4 {
   margin-bottom: 10px;
   color:#ed8ad8;;
@@ -336,6 +330,7 @@ body {
 
 
 #menu-toggle {
+  display: block;
   font-size: 20px;
   cursor: pointer;
   user-select: none;
@@ -358,7 +353,7 @@ body {
   position: fixed;
   top: 0;
   right: -100%;
-  width: 80%;
+  width: 30%;
   height: 100vh;
   background-color: #fff;
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
