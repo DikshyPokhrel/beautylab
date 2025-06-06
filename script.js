@@ -1,13 +1,32 @@
-<script>
-  const toggle = document.getElementById('menu-toggle');
-  const sideMenu = document.getElementById('side-menu');
-  const closeBtn = document.getElementById('close-btn');
+document.addEventListener('DOMContentLoaded', function () {
+  const toggleButton = document.getElementById('menu-toggle-mobile'); 
+  const dropdownMenu = document.querySelector('.hamburger-dropdown'); 
 
-  toggle.addEventListener('click', () => {
-    sideMenu.classList.add('open');
+  toggleButton.addEventListener('click', function (event) {
+    event.stopPropagation(); 
+    dropdownMenu.classList.toggle('show'); 
   });
 
-  closeBtn.addEventListener('click', () => {
-    sideMenu.classList.remove('open');
+  document.addEventListener('click', function (event) {
+    if (!dropdownMenu.contains(event.target) && event.target !== toggleButton) {
+      dropdownMenu.classList.remove('show');
+      const submenus = dropdownMenu.querySelectorAll('.dropdown-mobile-menu.show');
+      submenus.forEach(submenu => submenu.classList.remove('show'));
+    }
   });
-</script>
+
+  dropdownMenu.addEventListener('click', function (event) {
+    event.stopPropagation();
+  });
+
+  const productToggle = dropdownMenu.querySelector('.dropdown-mobile > a');
+  const productSubmenu = dropdownMenu.querySelector('.dropdown-mobile-menu');
+
+  if (productToggle && productSubmenu) {
+    productToggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      productSubmenu.classList.toggle('show');
+    });
+  }
+});

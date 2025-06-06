@@ -8,19 +8,18 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="navbar">
+<header class="navbar">
   <div class="brand">
     <img src="images/logo.jpg" alt="Logo" class="brand-logo">
     <span class="brand-name">Beauty<span>Lab</span></span>
   </div>
-
   <nav class="nav-links">
     <a href="#">Beauty</a>
     <a href="#">Treatment</a>
     <a href="about.html">About</a>
 
     <div class="dropdown">
-  <a href="products.html" class="products-link id=products-toggle">Products</a>
+  <a href="#">Products ▼</a>
       <div class="dropdown-menu">
         <div class="column">
           <h4>Beauty Services</h4>
@@ -43,6 +42,7 @@
 
     <a href="#">Price List</a>
   </nav>
+</div>
 <div id="menu-toggle" class="menu-toggle">☰</div>
 
 <div class="side-menu" id="side-menu">
@@ -93,8 +93,37 @@
 </div>
 
 
-</header>
+<div id="menu-toggle-mobile">☰</div>
+<div class="hamburger-dropdown" id="hamburgerDropdown">
+  <a href="#">Beauty</a>
+  <a href="#">Treatment</a>
+  <a href="about.html">About</a>
 
+  <div class="dropdown-mobile">
+    <a href="#" id="productToggle">Products ▼</a>
+      <div class="dropdown-mobile-menu" id="productMenu">
+        <div class="column">
+          <h4>Beauty Services</h4>
+          <a href="#">Facials</a>
+          <a href="#">Hair Treatment</a>
+          <a href="#">Makeup</a>
+          <a href="#">Waxing</a>
+          <a href="#">Nail Care</a>
+        </div>
+        <div class="column">
+          <h4>Healthcare & Wellness</h4>
+          <a href="#">Laser Therapy</a>
+          <a href="#">Dermatology</a>
+          <a href="#">Anti-aging Treatments</a>
+          <a href="#">Acne Treatment</a>
+          <a href="#">Body Sculpting</a>
+        </div>
+      </div>
+    </div>
+
+  <a href="#">Price List</a>
+</div>
+</header>
 
 <section class="main-section slide-in">
   <div class="main-content">
@@ -106,8 +135,19 @@
         We are dedicated to help you achieve a sense of well being for your body mind & soul by providing a variety of healthcare & beauty services.
       </p>
       <a href="#" class="learn-more-btn">
-        <span>Learn More</span>
-      </a>
+  <svg viewBox="0 0 100 100" class="circular-text-svg" aria-hidden="true">
+    <defs>
+      <path id="circlePath" d="M50,50 m-40,0 a40,40 0 1,1 80,0 a40,40 0 1,1 -80,0"/>
+    </defs>
+    <text fill="#1f1d1d" font-weight="700" font-size="12">
+  <textPath xlink:href="#circlePath" startOffset="0%">
+    Learn More • Learn More • Learn More •
+  </textPath>
+</text>
+  </svg>
+  <span class="arrow">→</span>
+</a>
+
     </div>
     <div class="person-popout">
   <div class="outer-circle">
@@ -118,7 +158,6 @@
     </div>
   </div>
 </div>
-
 
   <div class="why-choose-us">
     <h2>Why Choose Us?</h2>
